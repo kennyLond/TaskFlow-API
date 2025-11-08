@@ -1,0 +1,41 @@
+# Virtual environments
+venv/
+env/
+.env
+
+# Compiled Python files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+
+# Temporary or cache files
+*.log
+*.sqlite3
+*.db
+.DS_Store
+Thumbs.db
+
+# Editor or IDE configurations
+.vscode/
+.idea/
+*.swp
+
+# Build or dependency files
+*.egg-info/
+dist/
+build/
+
+# Test or coverage files
+.coverage
+htmlcov/
+pytest_cache/
+
+# Environment files
+.env
+.env.*
+
+# OS-specific files
+*.bak
+*.tmp
