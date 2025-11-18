@@ -16,7 +16,7 @@ def register_user_service(data: UserCreate, db:Session):
         )
     
     hashed_password = bcrypt.hashpw(data.password.encode("utf-8"),bcrypt.gensalt()).decode("utf-8")
-    new_user = User(username=data.user_name, password = data.password)
+    new_user = User(user_name=data.user_name, password=hashed_password)
     db.add(new_user)
     db.commit()
     db.refresh(new_user)
